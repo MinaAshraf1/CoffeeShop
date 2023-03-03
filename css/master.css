@@ -5,13 +5,7 @@
     --color4: #3D4251;
     --color5: #D35E35;
 }
-/*--------------------------------------error-------------------------*/
-img {
-    width: 5px;
-}
-svg {
-    width: 5px;
-}
+
 body {
     font-family: cursive;
     background-color: var(--color3);
@@ -247,7 +241,21 @@ main {
 }
 
 .info {
-    width: 35%;
+    width: 40%;
+    margin: auto;
+    height: fit-content;
+}
+
+.photo {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.photo img {
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
 }
 
 .info>h3 {
@@ -270,10 +278,6 @@ main {
     display: inline-block;
 }
 
-.drink>img {
-    border-radius: 20px;
-}
-
 @media screen and (max-width: 320px) {
     .drink {
         width: 80%;
@@ -287,10 +291,7 @@ main {
     }
 
     .drink>img {
-        width: 75px;
         height: 75px;
-        margin: 20px;
-        padding: 10px;
     }
 
     .drink p {
@@ -319,10 +320,7 @@ main {
     }
 
     .drink>img {
-        width: 150px;
         height: 150px;
-        margin: 20px;
-        padding: 10px;
     }
 
     .drink p {
@@ -352,10 +350,7 @@ main {
     }
 
     .drink>img {
-        width: 200px;
         height: 200px;
-        margin: 20px;
-        padding: 10px;
     }
 
     .drink p {
@@ -385,10 +380,7 @@ main {
     }
 
     .drink>img {
-        width: 150px;
         height: 150px;
-        margin: 10px;
-        padding: 5px;
     }
 
     .drink p {
