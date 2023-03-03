@@ -1,0 +1,475 @@
+:root {
+    --color1: #ffffff;
+    --color2: #E6E6E6;
+    --color3: #666666;
+    --color4: #3D4251;
+    --color5: #D35E35;
+}
+/*--------------------------------------error-------------------------*/
+img {
+    width: 5px;
+}
+svg {
+    width: 5px;
+}
+body {
+    font-family: cursive;
+    background-color: var(--color3);
+    padding: 0px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+/*-- header --*/
+
+header {
+    background-color: var(--color2);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+}
+
+.logo {
+    fill:var(--color5);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+h1 {
+    color: var(--color5);
+    padding: 5px;
+    margin: 5px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+ul {
+    padding: 5px;
+    margin: 50px;
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+@media (max-width: 767px) {
+    ul {
+        display: none;
+    }
+}
+
+/*-- body --*/
+
+main {
+    background-color: var(--color3);
+    width: 100%;
+    margin: 0px;
+}
+
+.h-body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    background-color: var(--color2);
+    border-radius: 25px;
+    box-shadow: 10px 20px 20px var(--color4);
+
+}
+
+.h-body img {
+    margin: 20px auto;
+}
+
+.contain {
+    margin: auto;
+}
+
+.contain h2 {
+    color: var(--color5);
+}
+
+.contain p {
+    color: var(--color4);
+}
+
+@media screen and (max-width: 767px) {
+    .h-body {
+        flex-flow: column;
+    }
+
+    .h-body img {
+        width: 80%;
+    }
+
+    .contain {
+        width: 80%;
+    }
+
+    .contain h2 {
+        width: fit-content;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .contain p {
+        width: 90%;
+        margin: 5px auto;
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .h-body {
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .h-body img {
+        width: 45%;
+    }
+
+    .contain {
+        width: 45%;
+    }
+
+    .contain h2 {
+        width: fit-content;
+        margin: 20px;
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .contain p {
+        width: 90%;
+        margin: 20px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .h-body {
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .h-body img {
+        width: 48%;
+    }
+
+    .contain {
+        width: 48%;
+    }
+
+    .contain h2 {
+        width: fit-content;
+        margin: 30px;
+        padding: 20px;
+        font-size: 60px;
+    }
+
+    .contain p {
+        width: 90%;
+        margin: 30px;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+
+.body {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.container {
+    width: 95%;
+    margin: 70px auto;
+    background-color: var(--color2);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px var(--color4);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container>h3 {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    margin-top: -50px;
+    padding: 20px;
+    background-color: var(--color4);
+    color: var(--color5);
+    border-radius: 60px 20px;
+    box-shadow: 10px 10px 25px var(--color3);
+}
+
+.drink:nth-child(even) {
+    background-color: var(--color1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-flow: row-reverse;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+
+.drink:nth-child(odd) {
+    background-color: var(--color1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-flow: row;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+
+.info {
+    width: 35%;
+}
+
+.info>h3 {
+    color: var(--color5);
+    width: fit-content;
+}
+
+.d {
+    width: fit-content;
+    margin: 5px auto;
+}
+
+.drink p {
+    color: var(--color4);
+    display: inline-block;
+}
+
+.drink svg {
+    fill: red;
+    display: inline-block;
+}
+
+.drink>img {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    .drink {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .info>h3 {
+        font-size: 20px;
+        margin: 5px auto;
+        padding: 10px;
+    }
+
+    .drink>img {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .drink p {
+        font-size: 15px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .drink svg {
+        width: 20px;
+        height: 20px;
+        margin: -5px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .drink {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .info>h3 {
+        font-size: 25px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .drink>img {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .drink p {
+        font-size: 15px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .drink svg {
+        width: 20px;
+        height: 20px;
+        margin: -5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .drink {
+        flex-flow: row;
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .info>h3 {
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .drink>img {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .drink p {
+        font-size: 30px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .drink svg {
+        width: 40px;
+        height: 40px;
+        margin: -10px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .drink {
+        flex-flow: row;
+        width: 45%;
+        margin-top: 40px;
+    }
+
+    .info>h3 {
+        font-size: 35px;
+        margin: 5px auto;
+        padding: 30px;
+    }
+
+    .drink>img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .drink p {
+        font-size: 20px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .drink svg {
+        width: 30px;
+        height: 30px;
+        margin: -7px;
+    }
+}
+
+/*--footer--*/
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.copy {
+    width: fit-content;
+    color: var(--color1);
+    margin: 10px;
+    padding: 10px;
+}
+
+.social {
+    width: fit-content;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--color1);
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact {
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact svg {
+    fill: var(--color1);
+    padding: 3px;
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--color1);
+    margin: 3px;
+    padding: 3px;
+}
+
+@media (max-width: 767px) {
+    footer {
+        flex-flow: column;
+    }
+
+    .copy,
+    .social,
+    .contact {
+        width: fit-content;
+        margin: 5px auto;
+    }
+
+}
